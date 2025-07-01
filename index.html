@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Eliézer G. de Vargas – Projetos CAD</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,34 +12,31 @@
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
-      color: white;
-      background-image: url('https://images.unsplash.com/photo-1581091012184-5c0d47e8e4ed?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
     header {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      background-color: #111;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
 
-    header h1 {
-      font-size: 24px;
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #222;
+      padding: 15px 0;
     }
 
     nav a {
       color: white;
-      margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
       transition: color 0.3s;
     }
 
@@ -49,74 +45,90 @@
     }
 
     .hero {
-      text-align: center;
-      padding: 100px 20px 60px;
-      background-color: rgba(0, 0, 0, 0.6);
+      background: url('e54dfecf-2c78-414f-9cbd-05e23beb9d85.png') no-repeat center center;
+      background-size: cover;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .hero h2 {
-      font-size: 36px;
+    .hero h1 {
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 2.5rem;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      color: #222;
       margin-bottom: 20px;
     }
 
-    .hero p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: 10px auto;
-      line-height: 1.6;
-    }
-
-    ul {
+    .content ul {
+      text-align: left;
       list-style: none;
       padding: 0;
-      max-width: 600px;
-      margin: 20px auto;
-      text-align: left;
+      margin-top: 20px;
     }
 
-    li::before {
+    .content li::before {
       content: "✅ ";
     }
 
     .btn-whatsapp {
-      margin-top: 40px;
       display: inline-block;
+      margin-top: 30px;
       background-color: #25D366;
       color: white;
       padding: 15px 30px;
-      font-size: 18px;
       border-radius: 8px;
+      font-size: 18px;
       text-decoration: none;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
 
     .btn-whatsapp:hover {
-      background-color: #1ebc5e;
+      background-color: #1da851;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      background-color: rgba(0, 0, 0, 0.8);
-      font-size: 14px;
+      background-color: #111;
+      color: white;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Eliézer CAD</h1>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
-    </nav>
+    <h1>Eliézer G. de Vargas</h1>
+    <p>Projetos em CAD e SolidWorks</p>
   </header>
 
-  <section class="hero">
-    <h2>Projetos em CAD e SolidWorks</h2>
+  <nav>
+    <a href="#">Início</a>
+    <a href="https://wa.me/5551999618536" target="_blank">Contato</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Especialista em Modelagem 3D e Desenhos Técnicos</h1>
+  </div>
+
+  <div class="content">
+    <h2>O que eu faço</h2>
     <p>Especialista em modelagem 3D de peças técnicas no <strong>SolidWorks</strong> e desenvolvimento de <strong>desenhos técnicos 2D</strong> com precisão no <strong>AutoCAD</strong>.</p>
 
-    <p>Serviços oferecidos:</p>
     <ul>
       <li>Modelagem de peças 3D</li>
       <li>Desenhos técnicos para fabricação</li>
@@ -128,10 +140,11 @@
     <p>👉 Consulte prazos e valores para o seu projeto!</p>
 
     <a class="btn-whatsapp" href="https://wa.me/5551999618536" target="_blank">Fale comigo no WhatsApp</a>
-  </section>
+  </div>
 
   <footer>
-    © 2025 Eliézer G. de Vargas – Todos os direitos reservados.
+    &copy; 2025 Eliézer G. de Vargas
   </footer>
+
 </body>
 </html>

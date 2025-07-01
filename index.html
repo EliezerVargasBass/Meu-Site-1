@@ -13,30 +13,30 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: #f9f9f9;
+      color: #fff;
     }
 
     header {
-      background-color: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
     }
 
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      background-color: #222;
-      padding: 15px 0;
+    header h1 {
+      font-size: 22px;
     }
 
     nav a {
-      color: white;
+      color: #fff;
+      margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1rem;
       transition: color 0.3s;
     }
 
@@ -45,106 +45,86 @@
     }
 
     .hero {
-      background: url('e54dfecf-2c78-414f-9cbd-05e23beb9d85.png') no-repeat center center;
+      height: 100vh;
+      background-image: url('e54dfecf-2c78-414f-9cbd-05e23beb9d85.png');
       background-size: cover;
-      height: 450px;
+      background-position: center;
       display: flex;
-      align-items: center;
       justify-content: center;
-    }
-
-    .hero h1 {
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
-      font-size: 2.5rem;
-    }
-
-    .content {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
+      align-items: center;
       text-align: center;
+      padding: 20px;
     }
 
-    .content h2 {
-      color: #222;
+    .hero-content {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 12px;
+      max-width: 800px;
+    }
+
+    h2 {
+      font-size: 32px;
       margin-bottom: 20px;
     }
 
-    .content ul {
-      text-align: left;
-      list-style: none;
-      padding: 0;
-      margin-top: 20px;
+    p, li {
+      font-size: 18px;
+      margin-bottom: 10px;
     }
 
-    .content li::before {
-      content: "✅ ";
+    ul {
+      text-align: left;
+      margin-top: 20px;
+      padding-left: 20px;
     }
 
     .btn-whatsapp {
-      display: inline-block;
       margin-top: 30px;
       background-color: #25D366;
       color: white;
       padding: 15px 30px;
-      border-radius: 8px;
       font-size: 18px;
+      border-radius: 8px;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      display: inline-block;
+      transition: background-color 0.3s;
     }
 
     .btn-whatsapp:hover {
-      background-color: #1da851;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #111;
-      color: white;
-      margin-top: 40px;
+      background-color: #1ebc5e;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Eliézer G. de Vargas</h1>
-    <p>Projetos em CAD e SolidWorks</p>
+    <h1>Eliézer CAD</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="https://wa.me/5551999618536" target="_blank">Contato</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#">Início</a>
-    <a href="https://wa.me/5551999618536" target="_blank">Contato</a>
-  </nav>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Projetos em CAD e SolidWorks</h2>
+      <p>Especialista em modelagem 3D de peças técnicas no <strong>SolidWorks</strong> e desenvolvimento de <strong>desenhos técnicos 2D</strong> com precisão no <strong>AutoCAD</strong>.</p>
 
-  <div class="hero">
-    <h1>Especialista em Modelagem 3D e Desenhos Técnicos</h1>
-  </div>
+      <ul>
+        <li>Modelagem de peças 3D</li>
+        <li>Desenhos técnicos para fabricação</li>
+        <li>Conversão de esboços manuais para arquivos CAD</li>
+        <li>Conversão de arquivos XT ou STEP em chapas metálicas</li>
+      </ul>
 
-  <div class="content">
-    <h2>O que eu faço</h2>
-    <p>Especialista em modelagem 3D de peças técnicas no <strong>SolidWorks</strong> e desenvolvimento de <strong>desenhos técnicos 2D</strong> com precisão no <strong>AutoCAD</strong>.</p>
+      <p>📍 Atendimento para todo o Brasil</p>
+      <p>👉 Consulte prazos e valores para o seu projeto!</p>
 
-    <ul>
-      <li>Modelagem de peças 3D</li>
-      <li>Desenhos técnicos para fabricação</li>
-      <li>Conversão de esboços manuais para arquivos CAD</li>
-      <li>Conversão de arquivos XT ou STEP em chapas metálicas</li>
-    </ul>
-
-    <p>📍 Atendimento para todo o Brasil</p>
-    <p>👉 Consulte prazos e valores para o seu projeto!</p>
-
-    <a class="btn-whatsapp" href="https://wa.me/5551999618536" target="_blank">Fale comigo no WhatsApp</a>
-  </div>
-
-  <footer>
-    &copy; 2025 Eliézer G. de Vargas
-  </footer>
+      <a class="btn-whatsapp" href="https://wa.me/5551999618536" target="_blank">Fale comigo no WhatsApp</a>
+    </div>
+  </section>
 
 </body>
 </html>

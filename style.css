@@ -27,3 +27,6 @@ body {
 }
 
 .topo .logo
+body {
+  background-color: red !important;
+}
